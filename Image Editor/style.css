@@ -134,9 +134,6 @@ body {
     color: #6c757d;
     border: 1px solid #6c757d;
 }
-.row{
-
-}
 .controls .choose-img{
     background-color: #6c757d;
     border: 1px solid #6c757d;
@@ -174,5 +171,5 @@ body {
     }
 }
 /* img {
-    transform: rotate(90deg);
+    filter: brightness(20%) saturate(12%) invert(12%) grayscale(20%);
 } */
