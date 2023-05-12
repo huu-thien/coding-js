@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    color: #fff;
+    background: #151638;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.wrapper{
+    background: #0b0c1e;
+    padding: 30px 25px;
+    width: 350px;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+header .time p{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.icons i{
+    padding: 0 2px;
+    font-size: 14px;
+}
+
+.choose-theme{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+.choose-theme p {
+    font-size: 14px;
+    padding-right: 16px;
+}
+.choose-theme input {
+    position: relative;
+    appearance: none;
+    width: 60px;
+    height:25px;
+    background-color: #151638;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+}
+.choose-theme input::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background: #8c8c8c;
+    width: 20px;
+    height: 17.5px;
+    border-radius: inherit;
+    transition: all 0.3s ease;
+}
+.choose-theme input:checked:before {
+    left: 35px;
+    background: #fff;
+}
+.screen-app{
+     background: #fff;
+     border-radius: 8px;
+     margin-bottom: 16px;
+     padding: 20px 0;
+}
+.screen-expression input{
+    width: 100%;
+    text-align: right;
+    padding: 8px 20px;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+.screen-result p{
+    width: 100%;
+    text-align: right;
+    padding: 0px 20px;
+    font-size: 16px;
+    color:#0b0c1e;
+}
+.buttons{
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+.btn{
+    width: calc(100% / 4 - 12px);
+    height: 60px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+    background: #f7f7f7;
+    transition: all 0.2s ease;
+}
+.btn:active {
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.9), 5px 5px 15px rgba(255, 255, 255, 0.8);
+    
+}
+
+/* Change theme */
+.wrapper.light-theme {
+    background-color: #fff;
+    transition: all 0.5s ease;
+}
+.light-theme header i,.light-theme header p, .light-theme .choose-theme p {
+    color: #333;
+}
+.light-theme .choose-theme input {
+    background-color: #efeff0;
+}
+.light-theme .choose-theme input::before {
+    background: #f7085a;
+}
+.light-theme .choose-theme input:checked:before {
+    background: #743de3;
+}
+.light-theme .screen-app {
+    border: 1px solid #ddd;
+}
+.btn.red {
+    background:  #f40177;
+    color: #fff;
+
+}
+.btn.expression {
+    background:  #743de3;
+    color: #fff;
+}
+.btn.equal {
+    background: #f25e23;
+    color: #fff;
+}
+
+.light-theme .btn:active {
+    box-shadow: -8px -8px 15px rgba(0, 0, 0, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
