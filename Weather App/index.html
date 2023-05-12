@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/weather-app.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="wrapper light-theme">
+        <!-- Header section -->
+        <header class="header">
+            <span class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+            <div class="column choose-theme">
+                <span>Light mode</span>
+                <input type="checkbox" name="" id="">
+            </div>
+            <!-- <div class="choose-theme">
+                <input type="checkbox">
+            </div> -->
+        </header>
+        <!-- Search section -->
+        <section class="search-section">
+            <div class="search-form">
+                <input type="text" placeholder="Search the city">
+                <span class="icon-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+            </div>
+            <button class="btn-search">Search</button>
+        </section>
+        
+            <h3>Today's Report</h3>
+        <!-- Section Image -->
+        <div class="section-image">
+            
+            <img src="./img/clouds.png" alt="">
+        </div>
+        <!-- Section Name city -->
+        <section class="city-section">
+            <h4 class="city-name">Ha Noi</h4>
+            <p class="temperature">29°C</p>
+        </section>
+        <!--  Other information section-->
+        <section class="info-section">
+            <div class="info-item wind-speed">
+                <img src="./img/storm.png" alt="">
+                <p class="parameter">23km/h</p>
+                <p class="info-description">Wind Speed</p>
+            </div>
+            <div class="info-item humidity">
+                <img src="./img/drop.png" alt="">
+                <p class="parameter">23km/h</p>
+                <p class="info-description">Humidity</p>
+            </div>
+            <div class="info-item main-weather">
+                <img src="./img/clouds.png" alt="">
+                <p class="parameter">23km/h</p>
+                <p class="info-description">Main Weather</p>
+            </div>
+        </section>
+        <!-- Section navigation -->
+        <nav class="nav-menu">
+            <span class="menu-item active">
+                <i class="fa-solid fa-house"></i>
+            </span>
+            <span class="menu-item">
+                <i class="fa-solid fa-location-dot"></i>
+            </span>
+            <span class="menu-item">
+                <i class="fa-solid fa-user"></i>
+            </span>
+            <span class="menu-item">
+                <i class="fa-solid fa-gear"></i>
+            </span>
+        </nav>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

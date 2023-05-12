@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #151638;
+}
+.wrapper{
+    background: #0b0c1e;
+    border-radius: 25px;
+    padding: 20px 25px;
+    width: 350px;
+    transition: all .5s ease;
+}
+/* Header section */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.header .menu-icon i{
+    font-size: 20px;
+    padding: 12px;
+    background: #1d1f2c;
+    border-radius: 50%;
+}
+
+.choose-theme {
+    display: flex;
+    align-items: center;
+}
+.choose-theme input{
+    position: relative;
+    appearance: none;
+    width: 60px;
+    height: 30px;
+    background: #1d1f2c;
+    border-radius:  30px;
+    cursor: pointer;
+    outline:  none;
+}
+.choose-theme input::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    background: #8c8c8c;
+    height: 20px;
+    width: 20px;
+    border-radius: inherit;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+.choose-theme input:checked::before {
+    left: 35px;
+    background: #fff;
+}
+.choose-theme span {
+    font-size: 14px;
+    padding-right: 15px;
+}
+/* Search- section */
+.search-section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+.search-form {
+    position: relative;
+    width: 200px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-right: 20px;
+}
+.search-form input{
+    width: 180px;
+    border: none;
+    outline: none;
+    padding: 6px 20px;
+    border-radius: 16px;
+    color: #333;
+}
+.icon-search{
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.icon-search i {
+    color: #333;
+}
+.btn-search{
+    color: #fff;
+    background: #743de3;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 4px 18px;
+    border-radius: 5px;
+}
+
+.app.hide {
+    display: none;
+}
+
+/* Section Image */
+.section-image{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding-bottom: 10px;
+}
+.section-image img {
+    margin: 0 auto;
+}
+/* Section city */
+.city-section {
+    margin-bottom: 16px;
+}
+.city-section .city-name{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #f7085a;
+}
+.city-section .temperature {
+    font-size: 60px;
+    text-align: center;
+}
+
+.info-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+.info-item {
+    width: calc(100% / 3 - 12px);
+}
+.info-item img {
+    width: 40%;
+    margin-left: 25px;
+    margin-bottom: 12px;
+}
+.info-item .parameter {
+    text-align: center;
+}
+.info-item .info-description {
+    text-align: center;
+    font-size: 12px;
+    color: #ccc;
+}
+
+/* navigation section */
+.nav-menu {
+    display: flex;
+    background: #16182a;
+    padding: 14px;
+    justify-content: space-around;
+    border-radius: 12px;
+}
+.menu-item.active i{
+    color: #743de3;
+}
+
+/* Light Theme css */
+.wrapper.light-theme {
+    background-color: #fff;
+    color: #333;
+    transition: all .5s ease;
+}
+.light-theme .menu-icon i{
+    background-color: #f5ecf8;
+}
+
+.light-theme .choose-theme input{
+    background: #f5ecf8;
+
+}
+.light-theme .choose-theme input::before {
+    background: #ac63eb;
+}
+.light-theme  .choose-theme input:checked::before {
+    left: 35px;
+    background: #e663e5;
+}
+.light-theme .search-form {
+    border: 1px solid #aaa;
+}
+.light-theme .nav-menu {
+    background: #f5ecf8;
+    color: #555;
+}
